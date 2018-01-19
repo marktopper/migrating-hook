@@ -1,0 +1,20 @@
+{
+	"name": "migrating-hook",
+	"description": "This is a hook",
+	"extra": {
+		"hook": {
+			"migrations": [
+				"resources/database/migrations"
+			],
+			"seeders": [
+				"resources/database/seeders"
+			],
+			"unseeders": [
+				"resources/database/unseeders"
+			],
+			"assets": {
+				"resources/assets": "public/vendor/migration-hook/assets"
+			}
+		}
+	}
+}
