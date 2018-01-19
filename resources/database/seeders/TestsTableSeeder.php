@@ -13,7 +13,9 @@ class TestsTableSeeder extends Seeder
     public function run()
     {
         DB::table('tests')->insert([
-          ['name' => 'foo']
+          ['name' => 'foo'],
+          ['name' => 'bar'],
+          ['name' => 'baz'],
         ]);
     }
 }
