@@ -12,6 +12,11 @@ class TestsTableSeeder extends Seeder
      */
     public function run()
     {
+        // Don't run if there is already data in the table.
+        if (DB::table('tests')->count() > 0) {
+            return;
+        }
+
         DB::table('tests')->insert([
           ['name' => 'foo'],
           ['name' => 'bar'],
