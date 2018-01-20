@@ -13,7 +13,7 @@ class AnotherTestsTableSeeder extends Seeder
     public function run()
     {
         // Don't run if there is already data in the table.
-        if (DB::table('tests')->count() > 0) {
+        if (DB::table('another_tests')->count() > 0) {
             return;
         }
 
